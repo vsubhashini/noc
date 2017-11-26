@@ -490,7 +490,6 @@ def main():
   parser.add_argument("-o", "--htmlout", action='store_true', help='output images and captions as html')
   args = parser.parse_args()
 
-  DIR = '/scratch/cluster/vsub/NOC_models'
   VOCAB_FILE = './surf_intersect_glove.txt'
   LSTM_NET_FILE = './deploy.3loss_coco_fc7_voc72klabel.shared_glove.prototxt'
   VGG_NET_FILE = 'vgg_orig_16layer.deploy.prototxt'
