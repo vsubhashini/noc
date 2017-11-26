@@ -27,7 +27,7 @@ works](http://bair.berkeley.edu/blog/2017/08/08/novel-object-captioning/)
 
 To get started you need to compile from this branch of caffe:
 ```
-    git clone https://github.com/vsubhashini/noc.git
+git clone https://github.com/vsubhashini/noc.git
 ```
 
 To compile Caffe, please refer to the [Installation page](http://caffe.berkeleyvision.org/installation.html).
@@ -42,13 +42,13 @@ link](https://www.dropbox.com/sh/0ydd6mv1yy4dyi4/AABFzUzLNO0vssIvxrmAeG9fa?dl=0)
 
 **Change directory and download the pre-trained models.**
 ```
-    cd examples/noc
-    ./download_models.sh
+cd examples/noc
+./download_models.sh
 ```
 
 **Run the captioner.**
 ```
-    python noc_captioner.py -i images_list.txt
+python noc_captioner.py -i images_list.txt
 ```
 
 Output with the default options:
