@@ -481,11 +481,14 @@ def load_weights_from_h5(net_object, h5_weights_file):
 
 def main():
   parser = argparse.ArgumentParser()
-  parser.add_argument("-m", "--modelname", type=str, required=True,
+  parser.add_argument("-m", "--modelname", type=str,
+                      default="models/imgnetcoco_3loss_voc72klabel_inglove_prelm75k_sgd_lr4e5_iter_80000.caffemodel.h5",
                       help='Path to NOC model (Imagenet/CoCo).')
-  parser.add_argument("-v", "--vggmodel", type=str, required=True,
+  parser.add_argument("-v", "--vggmodel", type=str,
+                      default="models/VGG_ILSVRC_16_layers.caffemodel",
                       help='Path to vgg 16 model file.')
-  parser.add_argument("-i", "--imagelist", type=str, required=True,
+  parser.add_argument("-i", "--imagelist", type=str,
+                      default="images_list.txt",
                       help='File with a list of images (full path to images).')
   parser.add_argument("-o", "--htmlout", action='store_true', help='output images and captions as html')
   args = parser.parse_args()

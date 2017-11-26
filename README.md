@@ -3,7 +3,7 @@
 This is repository contains pre-trained models and code accompanying the paper
 [Captioning Images with Diverse Objects](https://arxiv.org/abs/1606.07770).
 
-### Novel Object Captioner (NOC) ###
+### Novel Object Captioner (NOC)
 
 ![Novel Object
 Captioner](http://bair.berkeley.edu/blog/assets/novel_image_captioning/image_0.png)
@@ -23,7 +23,7 @@ works](http://bair.berkeley.edu/blog/2017/08/08/novel-object-captioning/)
 * [Project Page with additional resources](http://vsubhashini.github.io/noc.html)
 
 
-### Getting Started. ###
+### Getting Started.
 
 To get started you need to compile from this branch of caffe:
 ```
@@ -34,6 +34,21 @@ To compile Caffe, please refer to the [Installation page](http://caffe.berkeleyv
 ```
 
 ### Caption images using our pre-trained models. ###
+
+Pre-trained models corresponding to the results reported in the paper can be
+dowloaded here: [Drive
+link](https://drive.google.com/open?id=0B90_72zRQe88cVBNd2RQaEZEZGM), [Dropbox
+link](https://www.dropbox.com/sh/0ydd6mv1yy4dyi4/AABFzUzLNO0vssIvxrmAeG9fa?dl=0)
+
+** Change directory and download the pre-trained models. **
 ```
     cd examples/noc
+    ./download_models.sh
 ```
+
+** Run the captioner. **
+```
+    python noc_captioner.py -i images_list.txt
+```
+
+
