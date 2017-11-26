@@ -1,0 +1,22 @@
+net: "3loss_coco_fc7_voc72klabel.shared_glove72k.prototxt"
+#train_state: { stage: 'tune_lm' } # Need?
+train_state: { stage: 'tune_lm' } # Need?
+test_iter: 50
+test_state: {stage: 'test-on-train'}
+test_iter: 100
+test_state: {stage: 'test-on-val'}
+test_interval: 1000
+base_lr: 0.00004
+lr_policy: "step"
+display: 1
+stepsize: 20000
+max_iter: 80000
+gamma: 0.5
+momentum: 0.9
+weight_decay: 0
+snapshot: 5000
+snapshot_format: HDF5
+snapshot_prefix:"/z/vsub/CVPR2016/snapshots/new8objs/new8objs_coco_3loss_voc72klabel_glove_prelm75k_sgd_lr4e5"
+solver_mode: GPU
+random_seed: 1701
+average_loss: 100
