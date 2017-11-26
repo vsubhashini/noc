@@ -1,0 +1,10 @@
+images/COCO_val2014_000000050811.jpg
+images/COCO_val2014_000000156704.jpg
+images/COCO_val2014_000000190680.jpg
+images/COCO_val2014_000000238377.jpg
+images/COCO_val2014_000000238472.jpg
+images/COCO_val2014_000000317479.jpg
+images/COCO_val2014_000000417023.jpg
+images/COCO_val2014_000000420357.jpg
+images/n01838598_woodpecker.jpg
+images/n02657694_flounder.jpg
