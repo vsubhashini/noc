@@ -29,11 +29,11 @@ To get started you need to compile from this branch of caffe:
 ```
     git clone https://github.com/vsubhashini/noc.git
 ```
+
 To compile Caffe, please refer to the [Installation page](http://caffe.berkeleyvision.org/installation.html).
 
-```
 
-### Caption images using our pre-trained models. ###
+### Caption images using our pre-trained models.
 
 Pre-trained models corresponding to the results reported in the paper can be
 dowloaded here: [Drive
