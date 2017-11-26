@@ -16,7 +16,7 @@ momentum: 0.9
 weight_decay: 0
 snapshot: 5000
 snapshot_format: HDF5
-snapshot_prefix:"/z/vsub/CVPR2016/snapshots/new8objs/new8objs_coco_3loss_voc72klabel_glove_prelm75k_sgd_lr4e5"
+snapshot_prefix:"/CVPR2016/snapshots/new8objs/new8objs_coco_3loss_voc72klabel_glove_prelm75k_sgd_lr4e5"
 solver_mode: GPU
 random_seed: 1701
 average_loss: 100

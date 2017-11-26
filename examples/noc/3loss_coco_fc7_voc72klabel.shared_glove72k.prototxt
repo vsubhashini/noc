@@ -5,8 +5,8 @@ layer {
   top: "mean_fc7"
   top: "labels"
   hdf5_data_param {
-#      source:"/z/vsub/coco2014/hdf5/buffer_1_rm8obj_label72k_1/train_batches/hdf5_chunk_list.txt"
-      source:"/z/vsub/coco2014/hdf5/buffer_1_rm8newobj_label72k_1/train_batches/hdf5_chunk_list.txt"
+#      source:"/data/coco2014/hdf5/buffer_1_rm8obj_label72k_1/train_batches/hdf5_chunk_list.txt"
+      source:"/data/coco2014/hdf5/buffer_1_rm8newobj_label72k_1/train_batches/hdf5_chunk_list.txt"
       batch_size: 32
   }
   include { phase: TRAIN }
@@ -18,8 +18,8 @@ layer {
   top: "input_sentence"
   top: "target_sequence"
   hdf5_data_param {
-#    source:"/z/vsub/coco2014/hdf5/buffer_32_rm8obj_label72k_20/train_batches/hdf5_chunk_list.txt"
-    source:"/z/vsub/coco2014/hdf5/buffer_32_rm8newobj_label72k_20/train_batches/hdf5_chunk_list.txt"
+#    source:"/data/coco2014/hdf5/buffer_32_rm8obj_label72k_20/train_batches/hdf5_chunk_list.txt"
+    source:"/data/coco2014/hdf5/buffer_32_rm8newobj_label72k_20/train_batches/hdf5_chunk_list.txt"
     batch_size: 20
   }
   include { phase: TRAIN }
@@ -30,8 +30,8 @@ layer {
   top: "mean_fc7"
   top: "labels"
   hdf5_data_param {
-#      source:"/z/vsub/coco2014/hdf5/buffer_1_rm8obj_label72k_1/train_batches/hdf5_chunk_list.txt"
-      source:"/z/vsub/coco2014/hdf5/buffer_1_rm8newobj_label72k_1/train_batches/hdf5_chunk_list.txt"
+#      source:"/data/coco2014/hdf5/buffer_1_rm8obj_label72k_1/train_batches/hdf5_chunk_list.txt"
+      source:"/data/coco2014/hdf5/buffer_1_rm8newobj_label72k_1/train_batches/hdf5_chunk_list.txt"
       batch_size: 32
   }
   include { phase: TEST  stage: 'test-on-train' }
@@ -43,8 +43,8 @@ layer {
   top: "input_sentence"
   top: "target_sequence"
   hdf5_data_param {
-#    source:"/z/vsub/coco2014/hdf5/buffer_32_rm8obj_label72k_20/train_batches/hdf5_chunk_list.txt"
-    source:"/z/vsub/coco2014/hdf5/buffer_32_rm8newobj_label72k_20/train_batches/hdf5_chunk_list.txt"
+#    source:"/data/coco2014/hdf5/buffer_32_rm8obj_label72k_20/train_batches/hdf5_chunk_list.txt"
+    source:"/data/coco2014/hdf5/buffer_32_rm8newobj_label72k_20/train_batches/hdf5_chunk_list.txt"
     batch_size: 20
   }
   include { phase: TEST  stage: 'test-on-train' }
@@ -55,8 +55,8 @@ layer {
   top: "mean_fc7"
   top: "labels"
   hdf5_data_param {
-#      source:"/x/vsub/coco2014/hdf5/buffer_1_rm8obj_label72k_1/valid_batches/hdf5_chunk_list.txt"
-      source:"/z/vsub/coco2014/hdf5/buffer_1_rm8newobj_label72k_1/valid_batches/hdf5_chunk_list.txt"
+#      source:"/data/coco2014/hdf5/buffer_1_rm8obj_label72k_1/valid_batches/hdf5_chunk_list.txt"
+      source:"/data/coco2014/hdf5/buffer_1_rm8newobj_label72k_1/valid_batches/hdf5_chunk_list.txt"
       batch_size: 32
   }
   include { phase: TEST  stage: 'test-on-val' }
@@ -68,8 +68,8 @@ layer {
   top: "input_sentence"
   top: "target_sequence"
   hdf5_data_param {
-#    source:"/x/vsub/coco2014/hdf5/buffer_32_rm8obj_label72k_21/valid_batches/hdf5_chunk_list.txt"
-    source:"/z/vsub/coco2014/hdf5/buffer_32_rm8newobj_label72k_20/valid_batches/hdf5_chunk_list.txt"
+#    source:"/data/coco2014/hdf5/buffer_32_rm8obj_label72k_21/valid_batches/hdf5_chunk_list.txt"
+    source:"/data/coco2014/hdf5/buffer_32_rm8newobj_label72k_20/valid_batches/hdf5_chunk_list.txt"
     batch_size: 20
   }
   include { phase: TEST  stage: 'test-on-val' }
@@ -81,8 +81,8 @@ layer {
   top: "img_only_fc7"
   top: "img_only_labels"
   hdf5_data_param {
-#      source:"/x/vsub/coco2014/hdf5/buffer_1_only8obj_label72k_1/train_batches/hdf5_chunk_list.txt"
-      source:"/x/vsub/coco2014/hdf5/buffer_1_only8newobj_label72k_1/train_batches/hdf5_chunk_list.txt"
+#      source:"/data/coco2014/hdf5/buffer_1_only8obj_label72k_1/train_batches/hdf5_chunk_list.txt"
+      source:"/data/coco2014/hdf5/buffer_1_only8newobj_label72k_1/train_batches/hdf5_chunk_list.txt"
       batch_size: 16
   }
   include { phase: TRAIN }
@@ -93,8 +93,8 @@ layer {
   top: "img_only_fc7"
   top: "img_only_labels"
   hdf5_data_param {
-#      source:"/x/vsub/coco2014/hdf5/buffer_1_only8obj_label72k_1/train_batches/hdf5_chunk_list.txt"
-      source:"/x/vsub/coco2014/hdf5/buffer_1_only8newobj_label72k_1/train_batches/hdf5_chunk_list.txt"
+#      source:"/data/coco2014/hdf5/buffer_1_only8obj_label72k_1/train_batches/hdf5_chunk_list.txt"
+      source:"/data/coco2014/hdf5/buffer_1_only8newobj_label72k_1/train_batches/hdf5_chunk_list.txt"
       batch_size: 16
   }
   include { phase: TEST stage: 'test-on-train' }
@@ -105,8 +105,8 @@ layer {
   top: "img_only_fc7"
   top: "img_only_labels"
   hdf5_data_param {
-#      source:"/x/vsub/coco2014/hdf5/buffer_1_only8obj_label72k_1/train_batches/hdf5_chunk_list.txt"
-      source:"/x/vsub/coco2014/hdf5/buffer_1_only8newobj_label72k_1/train_batches/hdf5_chunk_list.txt"
+#      source:"/data/coco2014/hdf5/buffer_1_only8obj_label72k_1/train_batches/hdf5_chunk_list.txt"
+      source:"/data/coco2014/hdf5/buffer_1_only8newobj_label72k_1/train_batches/hdf5_chunk_list.txt"
       batch_size: 16
   }
   include { phase: TEST stage: 'test-on-val' }
@@ -119,8 +119,8 @@ layer {
   top: "txt_only_input_sentence"
   top: "txt_only_target_sequence"
   hdf5_data_param {
-#    source:"/z/vsub/coco2014/hdf5/buffer_32_only8obj_sents72k_20/train_batches/hdf5_chunk_list.txt"
-    source:"/z/vsub/coco2014/hdf5/buffer_32_only8newobj_sents72k_20/train_batches/hdf5_chunk_list.txt"
+#    source:"/data/coco2014/hdf5/buffer_32_only8obj_sents72k_20/train_batches/hdf5_chunk_list.txt"
+    source:"/data/coco2014/hdf5/buffer_32_only8newobj_sents72k_20/train_batches/hdf5_chunk_list.txt"
     batch_size: 20
   }
   include { phase: TRAIN }
@@ -132,8 +132,8 @@ layer {
   top: "txt_only_input_sentence"
   top: "txt_only_target_sequence"
   hdf5_data_param {
-#    source:"/z/vsub/coco2014/hdf5/buffer_32_only8obj_sents72k_20/train_batches/hdf5_chunk_list.txt"
-    source:"/z/vsub/coco2014/hdf5/buffer_32_only8newobj_sents72k_20/train_batches/hdf5_chunk_list.txt"
+#    source:"/data/coco2014/hdf5/buffer_32_only8obj_sents72k_20/train_batches/hdf5_chunk_list.txt"
+    source:"/data/coco2014/hdf5/buffer_32_only8newobj_sents72k_20/train_batches/hdf5_chunk_list.txt"
     batch_size: 20
   }
   include { phase: TEST stage: 'test-on-train' }
@@ -145,8 +145,8 @@ layer {
   top: "txt_only_input_sentence"
   top: "txt_only_target_sequence"
   hdf5_data_param {
-#    source:"/z/vsub/coco2014/hdf5/buffer_32_only8obj_sents72k_20/train_batches/hdf5_chunk_list.txt"
-    source:"/z/vsub/coco2014/hdf5/buffer_32_only8newobj_sents72k_20/train_batches/hdf5_chunk_list.txt"
+#    source:"/data/coco2014/hdf5/buffer_32_only8obj_sents72k_20/train_batches/hdf5_chunk_list.txt"
+    source:"/data/coco2014/hdf5/buffer_32_only8newobj_sents72k_20/train_batches/hdf5_chunk_list.txt"
     batch_size: 20
   }
   include { phase: TEST stage: 'test-on-val' }
