@@ -40,13 +40,13 @@ dowloaded here: [Drive
 link](https://drive.google.com/open?id=0B90_72zRQe88cVBNd2RQaEZEZGM), [Dropbox
 link](https://www.dropbox.com/sh/0ydd6mv1yy4dyi4/AABFzUzLNO0vssIvxrmAeG9fa?dl=0)
 
-** Change directory and download the pre-trained models. **
+**Change directory and download the pre-trained models.**
 ```
     cd examples/noc
     ./download_models.sh
 ```
 
-** Run the captioner. **
+**Run the captioner.**
 ```
     python noc_captioner.py -i images_list.txt
 ```
