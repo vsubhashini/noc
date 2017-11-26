@@ -1,4 +1,4 @@
-DEVICE_ID = -1
+DEVICE_ID = 0
 
 from collections import OrderedDict
 import argparse
